@@ -1,8 +1,4 @@
-SELECT emp_no, first_name, last_name, sex 
+SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
 INNER JOIN salaries ON
-salaries.emp_no = employees.emp_no;
-
-SELECT * FROM salaries
-JOIN employees ON
-first_name, last_name, sex
+salaries.emp_no=employees.emp_no;
