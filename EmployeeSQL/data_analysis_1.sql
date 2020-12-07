@@ -1,4 +1,19 @@
+DATA ANALYSIS 1
+
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
 INNER JOIN salaries ON
 salaries.emp_no=employees.emp_no;
+
+---------------------------------------------------------------------------------
+DATA ANALYSIS 2
+
+SELECT employees.first_name, employees.last_name, employees.hire_date
+FROM employees
+WHERE 
+		hire_date > '12/31/1985' 
+	AND hire_date < '1/1/1987';
+
+-----------------------------------------------------------------------------------
+DATA ANALYSIS 3
+
