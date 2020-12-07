@@ -17,3 +17,11 @@ WHERE
 -----------------------------------------------------------------------------------
 DATA ANALYSIS 3
 
+SELECT m.dept_no, d.department, m.emp_no, e.last_name, e.first_name
+FROM managers AS m
+INNER JOIN departments AS d ON m.dept_no = d.dept_no
+INNER JOIN employees AS e ON m.emp_no = e.emp_no;
+
+------------------------------------------------------------------------
+DATA ANALYSIS 4
+
