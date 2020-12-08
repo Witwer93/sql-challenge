@@ -63,3 +63,9 @@ WHERE(d.department='Sales'
 ---------------------------------------------------------------------------
 DATA ANALYSIS 8
 
+SELECT employees.last_name,
+COUNT (employees.last_name) AS name_frequency
+FROM employees
+GROUP BY employees.last_name
+ORDER BY name_frequency DESC
+
